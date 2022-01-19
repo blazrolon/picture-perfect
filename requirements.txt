@@ -1,0 +1,7 @@
+mediapipe
+PIL
+opencv-contrib-python
+matplotlib
+torch
+torchvision
+numpy

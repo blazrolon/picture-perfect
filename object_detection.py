@@ -162,7 +162,6 @@ COLORS = [[0.000, 0.447, 0.741], [0.850, 0.325, 0.098], [0.929, 0.694, 0.125],
 
 # standard PyTorch mean-std input image normalization
 transform = T.Compose([
-    #T.Resize(500),
     T.ToTensor(),
     T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
@@ -206,8 +205,7 @@ def detect(im, model, transform):
 To try DETRdemo model on your own image just change the URL below.
 """
 
-url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
-# dir = '../Documents/bottle-crop.jpg'
+
 dir = get_last_image()
 im = Image.open(dir)
 
